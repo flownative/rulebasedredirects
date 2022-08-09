@@ -1,0 +1,15 @@
+Flownative:
+  RuleBasedRedirects:
+    rules: []
+#      - host: '/^www\.acme\.com$/'
+#        path: '/^\/foo\/(.*)$/'
+#        target: 'https://www.acme.com/elsewhere/$1'
+#        status: 301
+
+Neos:
+  Flow:
+    http:
+      middlewares:
+        ruleBasedRedirect:
+          position: 'before dispatch'
+          middleware: 'Flownative\RuleBasedRedirects\RedirectMiddleware'

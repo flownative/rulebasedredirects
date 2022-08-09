@@ -1,0 +1,14 @@
+{
+    "description": "Implements rule-based redirects for Flow applications",
+    "name": "flownative/rulebasedredirects",
+    "type": "neos-package",
+    "license": "MIT",
+    "require": {
+        "neos/flow": "^7.0 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flownative\\RuleBasedRedirects\\": "Classes"
+        }
+    }
+}
